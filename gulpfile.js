@@ -11,6 +11,7 @@ gulp.task('default', function() {
                 './_site/jekyll/*',
             ]
         },
+        startPath : "/blackhawkaviation/",
         online : true,
         notify : false,
         ui : false,

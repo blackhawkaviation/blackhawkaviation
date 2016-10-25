@@ -16,7 +16,7 @@ google_fonts :
 ### Probably shouldn't edit the settings below
 ###
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blackhawkaviation" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 defaults:
