@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Our variables
+
+{% if site.google_fonts %}
+	@import url('https://fonts.googleapis.com/css?family={{site.google_fonts.namespace}}');
+	$base-font-family: "{{site.google_fonts.primary}}", Helvetica, Arial, sans-serif;
+	{% if site.google_fonts.secondary %}
+		$secondary-font-family: "{{site.google_fonts.secondary}}", Helvetica, Arial, sans-serif;
+	{% endif %}
+{% else %}
+	$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+{% endif %}
+
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #FFF;
+$background-color: #222;
+$brand-color:      #e95c00;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1000px;
+
+$on-palm:          600px;
+$on-laptop:        1000px;
+
+// Import partials from the `minima` theme.
+@import "minima", "style";

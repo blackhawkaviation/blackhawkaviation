@@ -1,0 +1,37 @@
+title: Black Hawk Aviation
+subtitle: Only the strong survive
+email: info@blackhawkaviation.ca
+description: >
+  A rad aviation company  
+
+google_fonts : 
+  primary: Oxygen
+  secondary: Slabo 27px
+  namespace: Oxygen|Slabo+27px
+  
+#google_maps_api : AIzaSyCC5RojknjT5x7CyLpO-OV33UrF-6nKtao
+#google_analytics : UA-73887811-7
+
+###
+### Probably shouldn't edit the settings below
+###
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+markdown: kramdown
+theme: minima
+
+exclude: [
+  'gulpfile.js',
+  'package.json',
+  'node_modules'
+]

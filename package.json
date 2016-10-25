@@ -1,0 +1,28 @@
+{
+  "name": "blackhawk",
+  "version": "0.1.0",
+  "description": "Site for Blackhawk Aviation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackhawkaviation/blackhawkaviation.git"
+  },
+  "keywords": [
+    "black",
+    "hawk",
+    "aviation"
+  ],
+  "author": "bozdoz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/blackhawkaviation/blackhawkaviation/issues"
+  },
+  "homepage": "https://github.com/blackhawkaviation/blackhawkaviation#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1"
+  }
+}
