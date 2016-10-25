@@ -1,3 +1,10 @@
 h1,h2,h3,h4,h5 {
 	font-family: $secondary-font-family;
 }
+
+::selection {
+  background: $brand-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $brand-color; /* Gecko Browsers */
+}

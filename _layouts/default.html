@@ -13,7 +13,18 @@
           <img src="{{site.baseurl}}/assets/blackhawk-logo.png" />
         </div>
         <div class="col-xs-12 col-sm-7 col-sm-push-1">
-          {{ content }}
+          <article class="post">
+            {% if page.title %}
+            <header class="post-header">
+              <h1 class="post-title">{{ page.title | escape }}</h1>
+            </header>
+            {% endif %}
+
+              <div class="post-content">
+                {{ content }}
+              </div>
+
+            </article>
         </div>
       </div>
     </main>

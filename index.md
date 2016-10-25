@@ -1,6 +1,6 @@
 ---
+title : Black Hawk Aviation
+menu : false
 ---
-
-# Black Hawk Aviation
 
 Welcome to the most rad aviation company.
