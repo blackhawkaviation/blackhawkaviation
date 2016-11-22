@@ -4,13 +4,16 @@ email: info@blackhawkaviation.ca
 description: >
   A rad aviation company  
 
+owner: James Foster
+phone: 1-306-380-5540
+
 google_fonts : 
   primary: Oxygen
   secondary: Slabo 27px
   namespace: Oxygen|Slabo+27px
-  
-#google_maps_api : AIzaSyCC5RojknjT5x7CyLpO-OV33UrF-6nKtao
-#google_analytics : UA-73887811-7
+ 
+google_analytics : UA-73887811-8
+# google_maps_api : AIzaSyADGT2nc6p6MAtPWw3U7tUsU-BDz6ls7CU
 
 ###
 ### Probably shouldn't edit the settings below
@@ -25,7 +28,10 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: default
+      layout: page
+
+gems:
+  - jekyll-sitemap
 
 markdown: kramdown
 theme: minima
@@ -33,5 +39,8 @@ theme: minima
 exclude: [
   'gulpfile.js',
   'package.json',
-  'node_modules'
+  'node_modules',
+  'Gemfile*',
+  'README.md',
+  'LICENSE',
 ]

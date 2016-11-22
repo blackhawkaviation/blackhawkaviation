@@ -1,0 +1,82 @@
+@include media-query($on-laptop) {
+	.page-content {
+		padding:55px 50px;
+	}
+}
+
+$five : 5;
+
+@include media-query(800px) {
+	.ebee {
+		display: none;
+	}
+	.second-bg {
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	.logo {
+		width: 385px / $five;
+		height: 306px / $five;
+		top:5px; 
+		left:10px;
+	}
+
+	.navbar .navbar-collapse {
+		text-align: center;
+		background-color : #181818;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+$six : 6;
+
+@include media-query($on-palm) {
+	.navbar-brand {
+		font-size: 17px !important;
+		padding-right:0 !important;
+		padding-left:15px !important;
+		padding-top:20px !important;
+		padding-bottom:0 !important;
+	}
+	.logo {
+		width: 385px / $six;
+		height: 306px / $six;
+		top:5px; 
+		left:5px;
+	}
+
+	h1,h2,h3,h4,h5 {
+		font-size: 25px !important;
+	}
+	.post-header {
+		margin-bottom: 15px;
+	}
+	.page-content {
+		position:absolute;
+		top:60px;
+		bottom:30px;
+		left:0;
+		right:0;
+		padding:40px;
+	}
+	.content-bg {
+		overflow: hidden;
+	}
+	.site-footer {
+		padding:0; 
+		height:30px;
+		.container-fluid {
+			height:30px;
+		}
+	}
+	.navbar .navbar-header {
+		margin-left: 80px;
+		height:60px;
+	}
+	.navbar .navbar-toggle {
+		padding:14px 5px;
+	}
+}

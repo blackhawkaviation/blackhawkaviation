@@ -1,0 +1,35 @@
+::selection {
+  background: $brand-color;
+  color: white;
+  text-shadow: black 1px 1px;
+}
+
+::-moz-selection {
+    background: $brand-color;
+    color: black;
+}
+
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+    
+    &:vertical {
+        width: 15px;
+    }
+
+    &:horizontal {
+        height: 15px;
+    }
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset rgba(0,0,0,0.2) -3px -3px 10px;
+    background-color: #EEE;
+}
+
+$thumb-color : #BBB;
+*::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: $thumb-color;
+    box-shadow: inset lighten($thumb-color, 10%) 2px 2px 3px,
+        inset darken($thumb-color, 10%) -2px -2px 3px;
+}

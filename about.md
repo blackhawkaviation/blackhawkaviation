@@ -1,14 +1,48 @@
 ---
-title: About
-permalink: /about/
+title: About Us
+permalink: /about-us/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## What We Do
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+![Inspire]({{site.baseurl|append:"/assets/images/Inspire.jpg"}})
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+**Aviation Services:**
+
+* Piston Engine Repair & Overhaul
+* Mobile Aircraft Maintenance
+* Aircraft Annual Inspections
+* Pre-Buy Inspections
+* PT6 Hot Section Inspections
+* Troubleshooting & Diagnostics
+* STC Installations
+* Ground Service Equipment Management & Repairs
+* Air Conditioning Servicing & Repair
+
+---
+
+![Sequoia 1]({{site.baseurl|append:"/assets/images/Sequoia 1.jpg"}})
+
+**Heavy Duty Mechanic Services:**
+
+* Machine Troubleshooting & Diagnostics
+* SCR System Repairs
+* Diesel Engine Repair
+* Machine Inspection & Repair
+* Air Conditioning Servicing & Repair
+
+---
+
+![CNT Gauges]({{site.baseurl|append:"/assets/images/CNT Gauges.jpg"}})
+
+**UAV Services:**
+
+* Crop Health Monitoring
+* Prescription Seed Mapping
+* Prescription Fertilizer Mapping
+* Elevation Mapping
+* Cattle Herd Monitoring
+* Aerial Photography & Videography
+* Standing Structure Inspection
+* Dam Inspection
+* Power Line Inspection

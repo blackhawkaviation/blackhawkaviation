@@ -5,35 +5,27 @@
 
   <body>
 
-    {% include header.html %}
+  <div class="second-bg">
+    <div class="ebee"></div>
+    <div class="content-bg">
+      
+      {% include header.html %}
 
-    <main class="page-content container" aria-label="Content">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <img src="{{site.baseurl}}/assets/blackhawk-logo.png" />
-        </div>
-        <div class="col-xs-12 col-sm-7 col-sm-push-1">
-          <article class="post">
-            {% if page.title %}
-            <header class="post-header">
-              <h1 class="post-title">{{ page.title | escape }}</h1>
-            </header>
-            {% endif %}
-
-              <div class="post-content">
-                {{ content }}
+      <main class="page-content container-fluid" aria-label="Content">
+          <div class="row">
+              <div class="col-xs-12">
+                  {{ content }}
               </div>
+          </div>
+      </main>
 
-            </article>
-        </div>
-      </div>
-    </main>
+      {% include footer.html %}
 
-    {% include footer.html %}
+    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{site.baseurl|append:"/js/main.js"}}"></script>
 
   </body>
 

@@ -1,10 +1,160 @@
+html, body {
+	background-color: #09202f;
+	height:100%;
+}
+
 h1,h2,h3,h4,h5 {
 	font-family: $secondary-font-family;
 }
 
-::selection {
-  background: $brand-color; /* WebKit/Blink Browsers */
+a {
+	text-decoration: none !important;
 }
-::-moz-selection {
-  background: $brand-color; /* Gecko Browsers */
+
+$two:2;
+
+.ebee {
+	background-image: url($baseurl + '/assets/images/ebee-bg-hover.png');
+	position: absolute;
+	top:-75px;
+	left:30%;
+	z-index: 1;
+	width:903px / $two;
+	height:223px / $two;
+	background-size: 100% 100%;
+	max-width:903px / $two;
+	margin:0 auto;
 }
+
+.second-bg {
+	position:absolute;
+	top:95px;
+	bottom:25px;
+	left:95px;
+	right:60px;
+	max-width:1000px;
+	max-height: 1000px;
+	margin:0 auto;
+	box-shadow: #28435f 0 8px 90px 40px;
+}
+
+.content-bg {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index: 2;
+	background-color:#181818;
+	@include border-radius(5px);
+	box-shadow:
+		rgba(255,255,255,0.2) 0 2px 15px 1px;
+}
+
+
+.logo {
+	position:absolute;
+	top:-35px;
+	left:-82px;
+	z-index:5;
+	@include border-radius(15%);
+	width: 385px / $two;
+	height: 306px / $two;
+	background-image : url($baseurl + '/assets/logo/blackhawk-logo-med-white.png');
+	background-size:100% 100%;
+	text-indent: -9999px;
+}
+
+.navbar {
+
+	border:none;
+
+	.navbar-toggle {
+		padding:18px 14px; 
+		.icon-bar {
+			background-color:white;
+		}
+	}
+
+	.navbar-nav {
+		li a {
+			text-decoration:none;
+			text-transform:uppercase;
+			color:white;
+			font-weight:bold;
+			padding:25px;
+			&:hover {
+				background:none !important;
+				color:$brand-color;
+			}
+		}
+	}
+
+	.navbar-header {
+		margin-left:120px;
+		height:69px;
+		a {
+			padding:25px;
+			font-weight:bold;
+			text-transform: uppercase;
+			color :white;
+			&:hover {
+				background:none !important;
+				color:$brand-color;
+			}
+		}
+	}
+}
+
+.page-content {
+	position:absolute;
+	top:70px;
+	bottom:50px;
+	left:10px;
+	right:10px;
+	padding:50px 75px;
+	background:white;
+	color:#444;
+	@include border-radius(3px);
+	box-shadow:inset rgba(0,0,0,0.3) 0 0 50px;
+	overflow-y:auto;
+
+	a:hover {
+		color : darken($brand-color, 15%);
+		text-decoration: none;
+	}
+
+	hr {
+		margin:25px;
+	}
+
+	img {
+		filter:grayscale(100%);
+		max-height: 250px;
+	}
+}
+
+.site-header {
+	border:none;
+}
+
+.site-footer {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	padding:10px 0 0;
+	border:none;
+	a {
+		color: #999;
+		text-shadow: rgba(0,0,0,1) 1px 1px;
+		font-size: 10pt;
+		&:hover {
+			color:$brand-color;
+			transition: all 1s;
+		}
+	}
+}
+
+@import 'mobile';
+@import 'webkit';
