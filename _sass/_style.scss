@@ -35,7 +35,7 @@ $two:2;
 	max-width:1000px;
 	max-height: 1000px;
 	margin:0 auto;
-	box-shadow: #28435f 0 8px 90px 40px;
+	box-shadow: #28435f 0 8px 200px 60px;
 }
 
 .content-bg {
@@ -120,14 +120,15 @@ $logoheight : 304px;
 	position:absolute;
 	top:70px;
 	bottom:50px;
-	left:10px;
-	right:10px;
+	left:0;
+	right:0;
 	padding:50px 75px;
 	background:white;
 	color:#444;
 	@include border-radius(3px);
 	box-shadow:inset rgba(0,0,0,0.3) 0 0 50px;
 	overflow-y:auto;
+	overflow-x:hidden;
 
 	a:hover {
 		color : darken($brand-color, 15%);
@@ -141,6 +142,12 @@ $logoheight : 304px;
 	img {
 		filter:grayscale(100%);
 		max-height: 250px;
+	}
+
+	p {
+		font-size:1em;
+		line-height: 1.5em;
+		margin-bottom: 1.5em;
 	}
 }
 
@@ -164,6 +171,19 @@ $logoheight : 304px;
 			transition: all 1s;
 		}
 	}
+}
+
+.img-div {
+	height:250px;
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter:grayscale(100%);
+    margin: 2em -4em 4em;
+}
+
+.post-title {
+	font-size:2em;
 }
 
 @import 'mobile';

@@ -9,7 +9,9 @@ gulp.task('default', function() {
         notify : false,
         ui : false,
         files : [
-            './_site/**/*',
+            './_site/**/*.html',
+            './_site/**/*.css',
+            './_site/**/*.js',
         ]
     });
 });

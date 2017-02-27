@@ -1,6 +1,8 @@
-@include media-query($on-laptop) {
+@media screen and ( min-width: 801px ) {
 	.page-content {
 		padding:55px 50px;
+		left:10px;
+		right:10px;
 	}
 }
 

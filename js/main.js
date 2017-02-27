@@ -13,3 +13,13 @@ $('.navbar-toggle.collapsed').on('click', function () {
 		});
 	}
 });
+
+$('.post-content').find('p').children('img').each(function (_,img) {
+	var img_div = $('<div>', {
+		class : 'img-div',
+		style : 'background-image : url(' + img.src + ')',
+		});
+	$(img).before(img_div);
+	img_div.append($(img));
+	$(img).hide();
+});
