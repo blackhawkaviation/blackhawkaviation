@@ -46,11 +46,21 @@ $two:2;
 	right:0;
 	z-index: 2;
 	background-color:#181818;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+background: #959595; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 	@include border-radius(5px);
 	box-shadow:
 		rgba(255,255,255,0.2) 0 2px 15px 1px;
 }
 
+$logowidth : 388px;
+$logoheight : 304px;
 
 .logo {
 	position:absolute;
@@ -58,9 +68,9 @@ $two:2;
 	left:-82px;
 	z-index:5;
 	@include border-radius(15%);
-	width: 385px / $two;
-	height: 306px / $two;
-	background-image : url($baseurl + '/assets/logo/blackhawk-logo-med-white.png');
+	width: $logowidth / $two;
+	height: $logoheight / $two;
+	background-image : url($baseurl + '/assets/logo/blackhawk-logo-med.png');
 	background-size:100% 100%;
 	text-indent: -9999px;
 }

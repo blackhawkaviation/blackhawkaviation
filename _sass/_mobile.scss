@@ -17,8 +17,8 @@ $five : 5;
 		right:0;
 	}
 	.logo {
-		width: 385px / $five;
-		height: 306px / $five;
+		width: $logowidth / $five;
+		height: $logoheight / $five;
 		top:5px; 
 		left:10px;
 	}
@@ -42,8 +42,8 @@ $six : 6;
 		padding-bottom:0 !important;
 	}
 	.logo {
-		width: 385px / $six;
-		height: 306px / $six;
+		width: $logowidth / $six;
+		height: $logoheight / $six;
 		top:5px; 
 		left:5px;
 	}
