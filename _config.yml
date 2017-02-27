@@ -15,6 +15,10 @@ google_fonts :
 google_analytics : UA-73887811-8
 # google_maps_api : AIzaSyADGT2nc6p6MAtPWw3U7tUsU-BDz6ls7CU
 
+# other meta
+color: '#e95c00'
+
+
 ###
 ### Probably shouldn't edit the settings below
 ###
