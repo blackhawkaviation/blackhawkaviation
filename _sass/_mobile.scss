@@ -1,14 +1,14 @@
-@media screen and ( min-width: 801px ) {
+/* @media screen and ( min-width: 801px ) { */
 	.page-content {
 		padding:55px 50px;
 		left:10px;
 		right:10px;
 	}
-}
+/* } */
 
 $five : 5;
 
-@include media-query(800px) {
+/* @include media-query(800px) { */
 	.ebee {
 		display: none;
 	}
@@ -31,11 +31,11 @@ $five : 5;
 		position: relative;
 		z-index: 1;
 	}
-}
+/* } */
 
 $six : 6;
 
-@include media-query($on-palm) {
+/* @include media-query($on-palm) { */
 	.navbar-brand {
 		font-size: 17px !important;
 		padding-right:0 !important;
@@ -81,4 +81,4 @@ $six : 6;
 	.navbar .navbar-toggle {
 		padding:14px 5px;
 	}
-}
+/* } */
