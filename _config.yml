@@ -23,8 +23,8 @@ color: '#e95c00'
 ### Probably shouldn't edit the settings below
 ###
 
+# baseurl: "/blackhawkaviation" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
-baseurl: "/blackhawkaviation" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 defaults:
